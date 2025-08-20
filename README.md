@@ -1,8 +1,8 @@
-EV-Vehicle-Charging-Demand-Prediction
-Project Overview
+# EV-Vehicle-Charging-Demand-Prediction
+ #Project Overview
 The Electric Vehicle Adoption Forecasting project aims to predict the future adoption of electric vehicles (EVs) using historical registration data from the Washington State Department of Licensing (DOL). This forecasting model assists urban planners in anticipating infrastructure needs, particularly for charging stations, thereby supporting sustainability goals and enhancing user satisfaction.
 
-Dataset
+📊Dataset
 The dataset utilized in this project contains monthly records of registered vehicles in Washington State, categorized by vehicle type. Key features of the dataset include:
 
 Date: The date of vehicle registration (YYYY-MM-DD format).
