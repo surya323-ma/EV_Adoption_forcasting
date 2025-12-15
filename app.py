@@ -15,11 +15,11 @@ model = joblib.load('forecasting_ev_model.pkl')
 st.markdown("""
     <style>
         body {
-            background-color: #fcf7f7;
-            color: #000000;
+            background-color: #000000;
+            color: #FFFFFF;
         }
         .stApp {
-            background: linear-gradient(to right, #c2d3f2, #7f848a);
+            background-color: #000000 !important; 
         }
     </style>
 """, unsafe_allow_html=True)
@@ -28,7 +28,7 @@ st.markdown("""
 # Stylized title using markdown + HTML
 st.markdown("""
     <div style='text-align: center; font-size: 36px; font-weight: bold; color: #FFFFFF; margin-top: 20px;'>
-        🔮 EV Adoption Forecaster for a County in Washington State
+    🚙EV Adoption Forecaster for a County in Washington State
     </div>
 """, unsafe_allow_html=True)
 
@@ -44,7 +44,7 @@ st.image("ev-car-factory.jpg", use_container_width=True)
 
 # Instruction line
 st.markdown("""
-    <div style='text-align: left; font-size: 22px; padding-top: 10px; color: #FFFFFF;'>
+    <div style='text-align: left; font-size: 22px; padding-top: 10px; color: #FF0000;'>
         Select a county and see the forecasted EV adoption trend for the next 3 years.
     </div>
 """, unsafe_allow_html=True)
@@ -131,9 +131,9 @@ st.subheader(f"📊 Cumulative EV Forecast for {county} County")
 fig, ax = plt.subplots(figsize=(12, 6))
 for label, data in combined.groupby('Source'):
     ax.plot(data['Date'], data['Cumulative EV'], label=label, marker='o')
-ax.set_title(f"Cumulative EV Trend - {county} (3 Years Forecast)", fontsize=14, color='white')
-ax.set_xlabel("Date", color='white')
-ax.set_ylabel("Cumulative EV Count", color='white')
+ax.set_title(f"Cumulative EV Trend - {county} (3 Years Forecast)", fontsize=14, color='Yellow')
+ax.set_xlabel("Date", color='Red')
+ax.set_ylabel("Cumulative EV Count", color='Red')
 ax.grid(True, alpha=0.3)
 ax.set_facecolor("#1c1c1c")
 fig.patch.set_facecolor('#1c1c1c')
@@ -255,4 +255,4 @@ if multi_counties:
 
 st.success("Forecast complete")
 
-st.markdown("Prepared for the **AICTE Internship Cycle 2 by S4F**")
+st.markdown("Prepared for the **Surya Omar**")
