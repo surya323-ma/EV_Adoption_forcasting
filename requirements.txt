@@ -1,9 +1,6 @@
+streamlit
 pandas
 numpy
 scikit-learn
-streamlit
-joblib==1.4.2
-#conda activate chatbot comd
-
-cd "C:\Users\surya omar\OneDrive\Desktop\ml project\EV_Adoption_forcasting"
-streamlit run app.py
+joblib
+matplotlib
