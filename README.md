@@ -44,6 +44,7 @@ streamlit run app.py
 Option 2: Launch on Streamlit Cloud
 
 Click the badge below to open the app directly:
+https://evadoption.streamlit.app/
 
 🔮 Features
 
